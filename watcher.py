@@ -57,7 +57,8 @@ def fetch_screenings(attribute: str) -> dict[str, dict]:
                 "time": event["eventDateTime"],
                 "soldOut": event["soldOut"],
                 "free_seats": round(event.get("availabilityRatio", 0) * IMAX_SEATS),
-                "link": event["bookingLink"],
+                # bookingLink (tickets.cinemacity.cz/api/order/...) returns 404 in a browser
+                "link": event["bookingRouterLaunchLink"],
                 "attributes": event["attributeIds"],
             }
     return screenings
