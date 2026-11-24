@@ -1,8 +1,9 @@
 # Dune IMAX watcher
 
 Sleduje Cinema City **Praha Flora** a pošle správu na Telegram, keď sa objaví
-**IMAX** predstavenie filmu *Duna: část třetí* (alebo sa uvoľnia miesta
-na vypredané predstavenie). Beží cez GitHub Actions každých ~5 minút.
+**IMAX** predstavenie filmu *Duna: část třetí* alebo sa uvoľní čo i len
+jedno miesto. IMAX 70 mm predstavenia nemajú atribút „imax“, preto sa
+rozpoznávajú podľa sály IMAX. Beží cez GitHub Actions každých ~5 minút.
 
 ## Nastavenie
 

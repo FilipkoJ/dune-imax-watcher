@@ -1,5 +1,7 @@
 """Watches Cinema City Praha Flora for IMAX screenings of Dune: Part Three
-and sends a Telegram message when new ones appear or sold-out ones free up."""
+and sends a Telegram message when new ones appear or seats free up.
+
+IMAX 70mm screenings are not tagged "imax"; they are recognised by the IMAX hall."""
 
 import argparse
 import json
@@ -16,6 +18,7 @@ CINEMA_ID = "1052"  # Praha Flora
 UNTIL = "2027-12-31"
 STATE_FILE = Path(__file__).with_name("state.json")
 USER_AGENT = "Mozilla/5.0 (dune-imax-watcher)"
+IMAX_SEATS = 385  # derived from availabilityRatio steps (1 seat ~ 0.0026)
 
 
 def normalize(text: str) -> str:
@@ -46,12 +49,14 @@ def fetch_screenings(attribute: str) -> dict[str, dict]:
         films = {f["id"]: f["name"] for f in body["films"]}
         for event in body["events"]:
             name = films.get(event["filmId"], "")
-            if not is_target_film(name) or attribute not in event["attributeIds"]:
+            in_imax_hall = attribute == "imax" and event.get("auditoriumTinyName") == "IMAX"
+            if not is_target_film(name) or not (in_imax_hall or attribute in event["attributeIds"]):
                 continue
             screenings[event["id"]] = {
                 "film": name,
                 "time": event["eventDateTime"],
                 "soldOut": event["soldOut"],
+                "free_seats": round(event.get("availabilityRatio", 0) * IMAX_SEATS),
                 "link": event["bookingLink"],
                 "attributes": event["attributeIds"],
             }
@@ -71,7 +76,8 @@ def save_state(state: dict[str, dict]) -> None:
 def format_screening(s: dict) -> str:
     day, time = s["time"].split("T")
     extras = ", ".join(a for a in s["attributes"] if a in ("2d", "3d", "70-mm", "dolby-atmos", "4dx"))
-    return f"• {day} {time[:5]} ({extras})\n  {s['link']}"
+    status = "VYPREDANÉ" if s["soldOut"] else f"voľné ~{s['free_seats']} miest"
+    return f"• {day} {time[:5]} ({extras}) – {status}\n  {s['link']}"
 
 
 def send_telegram(text: str) -> None:
@@ -106,7 +112,10 @@ def main() -> int:
     new = [s for sid, s in current.items() if sid not in previous]
     freed = [
         s for sid, s in current.items()
-        if sid in previous and previous[sid]["soldOut"] and not s["soldOut"]
+        if sid in previous and not s["soldOut"] and (
+            previous[sid]["soldOut"]
+            or s["free_seats"] > previous[sid].get("free_seats", 0)
+        )
     ]
     print(f"Found {len(current)} matching screenings ({len(new)} new, {len(freed)} freed up).")
 
@@ -115,7 +124,7 @@ def main() -> int:
         lines.append(f"🎬 Nové {args.attr.upper()} predstavenia Duna: část třetí – Flora!")
         lines += [format_screening(s) for s in sorted(new, key=lambda s: s["time"])]
     if freed:
-        lines.append("🎟 Uvoľnili sa miesta na vypredané predstavenia:")
+        lines.append("🎟 Uvoľnili sa miesta v IMAXe na Dunu 3:")
         lines += [format_screening(s) for s in sorted(freed, key=lambda s: s["time"])]
 
     if args.dry_run:
