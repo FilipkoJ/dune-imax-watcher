@@ -16,6 +16,7 @@ from pathlib import Path
 API = "https://www.cinemacity.cz/cz/data-api-service/v1/quickbook/10101"
 CINEMA_ID = "1052"  # Praha Flora
 UNTIL = "2027-12-31"
+EARLIEST_DATE = "2027-01-10"  # away from Prague until 9 Jan 2027
 STATE_FILE = Path(__file__).with_name("state.json")
 USER_AGENT = "Mozilla/5.0 (dune-imax-watcher)"
 IMAX_SEATS = 385  # derived from availabilityRatio steps (1 seat ~ 0.0026)
@@ -38,9 +39,9 @@ def get_json(url: str) -> dict:
 
 
 def fetch_screenings(attribute: str) -> dict[str, dict]:
-    today = date.today().isoformat()
+    start = max(date.today().isoformat(), EARLIEST_DATE)
     dates_url = f"{API}/dates/in-cinema/{CINEMA_ID}/until/{UNTIL}?attr=&lang=cs_CZ"
-    dates = [d for d in get_json(dates_url)["body"]["dates"] if d >= today]
+    dates = [d for d in get_json(dates_url)["body"]["dates"] if d >= start]
 
     screenings: dict[str, dict] = {}
     for day in dates:
