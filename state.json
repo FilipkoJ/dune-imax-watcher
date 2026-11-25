@@ -12,7 +12,7 @@
       "subbed"
     ],
     "film": "Duna: část třetí",
-    "free_seats": 6,
+    "free_seats": 8,
     "link": "https://www.cinemacity.cz/cz/booking-router/launch/1052/248952?lang=cs",
     "soldOut": false,
     "time": "2026-12-15T14:00:00"
@@ -48,7 +48,7 @@
       "subbed"
     ],
     "film": "Duna: část třetí",
-    "free_seats": 8,
+    "free_seats": 7,
     "link": "https://www.cinemacity.cz/cz/booking-router/launch/1052/249034?lang=cs",
     "soldOut": false,
     "time": "2026-12-15T20:40:00"
@@ -66,7 +66,7 @@
       "subbed"
     ],
     "film": "Duna: část třetí",
-    "free_seats": 24,
+    "free_seats": 25,
     "link": "https://www.cinemacity.cz/cz/booking-router/launch/1052/267892?lang=cs",
     "soldOut": false,
     "time": "2026-12-16T00:01:00"
@@ -156,7 +156,7 @@
       "subbed"
     ],
     "film": "Duna: část třetí",
-    "free_seats": 34,
+    "free_seats": 36,
     "link": "https://www.cinemacity.cz/cz/booking-router/launch/1052/267906?lang=cs",
     "soldOut": false,
     "time": "2026-12-18T10:40:00"
@@ -228,7 +228,7 @@
       "subbed"
     ],
     "film": "Duna: část třetí",
-    "free_seats": 23,
+    "free_seats": 21,
     "link": "https://www.cinemacity.cz/cz/booking-router/launch/1052/267911?lang=cs",
     "soldOut": false,
     "time": "2026-12-19T10:40:00"
@@ -246,7 +246,7 @@
       "subbed"
     ],
     "film": "Duna: část třetí",
-    "free_seats": 17,
+    "free_seats": 15,
     "link": "https://www.cinemacity.cz/cz/booking-router/launch/1052/267913?lang=cs",
     "soldOut": false,
     "time": "2026-12-19T14:00:00"
@@ -318,7 +318,7 @@
       "subbed"
     ],
     "film": "Duna: část třetí",
-    "free_seats": 28,
+    "free_seats": 26,
     "link": "https://www.cinemacity.cz/cz/booking-router/launch/1052/267922?lang=cs",
     "soldOut": false,
     "time": "2026-12-20T14:00:00"
@@ -340,5 +340,275 @@
     "link": "https://www.cinemacity.cz/cz/booking-router/launch/1052/267926?lang=cs",
     "soldOut": false,
     "time": "2026-12-20T17:20:00"
+  },
+  "291584": {
+    "attributes": [
+      "12-plus",
+      "2d",
+      "70-mm",
+      "action",
+      "adventure",
+      "drama",
+      "first-subbed-lang-cs",
+      "sci-fi",
+      "subbed"
+    ],
+    "film": "Duna: část třetí",
+    "free_seats": 364,
+    "link": "https://www.cinemacity.cz/cz/booking-router/launch/1052/291584?lang=cs",
+    "soldOut": false,
+    "time": "2026-12-21T09:00:00"
+  },
+  "291585": {
+    "attributes": [
+      "12-plus",
+      "2d",
+      "70-mm",
+      "action",
+      "adventure",
+      "drama",
+      "first-subbed-lang-cs",
+      "sci-fi",
+      "subbed"
+    ],
+    "film": "Duna: část třetí",
+    "free_seats": 339,
+    "link": "https://www.cinemacity.cz/cz/booking-router/launch/1052/291585?lang=cs",
+    "soldOut": false,
+    "time": "2026-12-21T12:20:00"
+  },
+  "291586": {
+    "attributes": [
+      "12-plus",
+      "2d",
+      "70-mm",
+      "action",
+      "adventure",
+      "drama",
+      "first-subbed-lang-cs",
+      "sci-fi",
+      "subbed"
+    ],
+    "film": "Duna: část třetí",
+    "free_seats": 289,
+    "link": "https://www.cinemacity.cz/cz/booking-router/launch/1052/291586?lang=cs",
+    "soldOut": false,
+    "time": "2026-12-21T15:40:00"
+  },
+  "291587": {
+    "attributes": [
+      "12-plus",
+      "2d",
+      "70-mm",
+      "action",
+      "adventure",
+      "drama",
+      "first-subbed-lang-cs",
+      "sci-fi",
+      "subbed"
+    ],
+    "film": "Duna: část třetí",
+    "free_seats": 211,
+    "link": "https://www.cinemacity.cz/cz/booking-router/launch/1052/291587?lang=cs",
+    "soldOut": false,
+    "time": "2026-12-21T19:00:00"
+  },
+  "291588": {
+    "attributes": [
+      "12-plus",
+      "2d",
+      "70-mm",
+      "action",
+      "adventure",
+      "drama",
+      "first-subbed-lang-cs",
+      "sci-fi",
+      "subbed"
+    ],
+    "film": "Duna: část třetí",
+    "free_seats": 342,
+    "link": "https://www.cinemacity.cz/cz/booking-router/launch/1052/291588?lang=cs",
+    "soldOut": false,
+    "time": "2026-12-21T22:20:00"
+  },
+  "291589": {
+    "attributes": [
+      "12-plus",
+      "2d",
+      "70-mm",
+      "action",
+      "adventure",
+      "drama",
+      "first-subbed-lang-cs",
+      "sci-fi",
+      "subbed"
+    ],
+    "film": "Duna: část třetí",
+    "free_seats": 374,
+    "link": "https://www.cinemacity.cz/cz/booking-router/launch/1052/291589?lang=cs",
+    "soldOut": false,
+    "time": "2026-12-22T09:00:00"
+  },
+  "291590": {
+    "attributes": [
+      "12-plus",
+      "2d",
+      "70-mm",
+      "action",
+      "adventure",
+      "drama",
+      "first-subbed-lang-cs",
+      "sci-fi",
+      "subbed"
+    ],
+    "film": "Duna: část třetí",
+    "free_seats": 359,
+    "link": "https://www.cinemacity.cz/cz/booking-router/launch/1052/291590?lang=cs",
+    "soldOut": false,
+    "time": "2026-12-22T12:20:00"
+  },
+  "291591": {
+    "attributes": [
+      "12-plus",
+      "2d",
+      "70-mm",
+      "action",
+      "adventure",
+      "drama",
+      "first-subbed-lang-cs",
+      "sci-fi",
+      "subbed"
+    ],
+    "film": "Duna: část třetí",
+    "free_seats": 323,
+    "link": "https://www.cinemacity.cz/cz/booking-router/launch/1052/291591?lang=cs",
+    "soldOut": false,
+    "time": "2026-12-22T15:40:00"
+  },
+  "291592": {
+    "attributes": [
+      "12-plus",
+      "2d",
+      "70-mm",
+      "action",
+      "adventure",
+      "drama",
+      "first-subbed-lang-cs",
+      "sci-fi",
+      "subbed"
+    ],
+    "film": "Duna: část třetí",
+    "free_seats": 257,
+    "link": "https://www.cinemacity.cz/cz/booking-router/launch/1052/291592?lang=cs",
+    "soldOut": false,
+    "time": "2026-12-22T19:00:00"
+  },
+  "291593": {
+    "attributes": [
+      "12-plus",
+      "2d",
+      "70-mm",
+      "action",
+      "adventure",
+      "drama",
+      "first-subbed-lang-cs",
+      "sci-fi",
+      "subbed"
+    ],
+    "film": "Duna: část třetí",
+    "free_seats": 350,
+    "link": "https://www.cinemacity.cz/cz/booking-router/launch/1052/291593?lang=cs",
+    "soldOut": false,
+    "time": "2026-12-22T22:20:00"
+  },
+  "291594": {
+    "attributes": [
+      "12-plus",
+      "2d",
+      "70-mm",
+      "action",
+      "adventure",
+      "drama",
+      "first-subbed-lang-cs",
+      "sci-fi",
+      "subbed"
+    ],
+    "film": "Duna: část třetí",
+    "free_seats": 374,
+    "link": "https://www.cinemacity.cz/cz/booking-router/launch/1052/291594?lang=cs",
+    "soldOut": false,
+    "time": "2026-12-23T09:00:00"
+  },
+  "291595": {
+    "attributes": [
+      "12-plus",
+      "2d",
+      "70-mm",
+      "action",
+      "adventure",
+      "drama",
+      "first-subbed-lang-cs",
+      "sci-fi",
+      "subbed"
+    ],
+    "film": "Duna: část třetí",
+    "free_seats": 367,
+    "link": "https://www.cinemacity.cz/cz/booking-router/launch/1052/291595?lang=cs",
+    "soldOut": false,
+    "time": "2026-12-23T12:20:00"
+  },
+  "291596": {
+    "attributes": [
+      "12-plus",
+      "2d",
+      "70-mm",
+      "action",
+      "adventure",
+      "drama",
+      "first-subbed-lang-cs",
+      "sci-fi",
+      "subbed"
+    ],
+    "film": "Duna: část třetí",
+    "free_seats": 345,
+    "link": "https://www.cinemacity.cz/cz/booking-router/launch/1052/291596?lang=cs",
+    "soldOut": false,
+    "time": "2026-12-23T15:40:00"
+  },
+  "291597": {
+    "attributes": [
+      "12-plus",
+      "2d",
+      "70-mm",
+      "action",
+      "adventure",
+      "drama",
+      "first-subbed-lang-cs",
+      "sci-fi",
+      "subbed"
+    ],
+    "film": "Duna: část třetí",
+    "free_seats": 277,
+    "link": "https://www.cinemacity.cz/cz/booking-router/launch/1052/291597?lang=cs",
+    "soldOut": false,
+    "time": "2026-12-23T19:00:00"
+  },
+  "291598": {
+    "attributes": [
+      "12-plus",
+      "2d",
+      "70-mm",
+      "action",
+      "adventure",
+      "drama",
+      "first-subbed-lang-cs",
+      "sci-fi",
+      "subbed"
+    ],
+    "film": "Duna: část třetí",
+    "free_seats": 357,
+    "link": "https://www.cinemacity.cz/cz/booking-router/launch/1052/291598?lang=cs",
+    "soldOut": false,
+    "time": "2026-12-23T22:20:00"
   }
 }
